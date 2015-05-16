@@ -1,0 +1,31 @@
+Undefined Variable Name 'vel_tbg'.
+__________________________________________
+           VERBOSE DESCRIPTION
+Undefined Variable Name 'vel_tbg'. __________________________________________
+__________________________________________
+At libutil.ks on archive, line 87
+        lock steering to vel_tbg.
+                   ^
+Called from libutil.ks on archive, line 23
+    local fuel_use is fuel_rate_Mgs(). //call once, because iterates engines.
+                                ^
+Called from libutil.ks on archive, line 98
+            set time_to_go to burn_time(vel_tbg:mag).
+                                       ^
+Called from circularize on archive, line 8
+circularize_at(time:seconds + eta:apoapsis).
+                            ^
+Undefined Variable Name 'fuel_use'.
+__________________________________________
+           VERBOSE DESCRIPTION
+Undefined Variable Name 'fuel_use'. __________________________________________
+__________________________________________
+At libutil.ks on archive, line 24
+    local v_exhaust is ship:availablethrust / fuel_use.
+                                         ^
+Called from libutil.ks on archive, line 98
+            set time_to_go to burn_time(vel_tbg:mag).
+                                       ^
+Called from circularize on archive, line 8
+circularize_at(time:seconds + eta:apoapsis).
+

@@ -1,0 +1,14 @@
+DEPRECATED since functions and local variables were added.
+
+Standard subroutine conventions:
+
+1. Subroutines shall return their results, if any, in the variable RESULT.
+
+2. All variables assigned in a subroutine, except for RESULT, shall be prefixed
+   with the name of the subroutine or a short string derived from same.
+
+3. Subroutines shall explcitly document all side effects at the beginning of 
+   the file.  Changing configuration variables, steering the ship, firing
+   engines, creating maneuver nodes, etc.
+
+4. Subroutines must not block.  
